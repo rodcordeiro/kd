@@ -1,5 +1,4 @@
-create database KD;
-USE KD;
+USE id8060145_conceptive;
 create table dados (
 id int(4) auto_increment primary key not null,
 categoria varchar(50) not null,

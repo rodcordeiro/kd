@@ -1,5 +1,6 @@
 <?php
-$db= mysqli_connect('localhost', 'id8060145_cordeiro', '@Drigo13', 'id8060145_conceptive');
+$db= mysqli_connect(getenv("CONN_URI"), getenv("CONC_MYSQL_USER"), getenv("CONC_MYSQL_PASSWORD"), getenv("CONC_MYSQL_DATABASE"));
+
 $valor = "not null";
 $sql = "SELECT * FROM dados";
 if (isset($_POST['filtrar'])){
